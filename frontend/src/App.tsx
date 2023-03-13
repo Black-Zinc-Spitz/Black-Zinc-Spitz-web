@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from "./Home/Home";
-import Products from "./Products/Products";
+import Product from './Products/Products';
+import Home from './Home/Home';
 import Orders from './Order/Orders';
 
 function App() {
@@ -53,7 +53,7 @@ function App() {
         <main>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/catalog" element={<Products />} />
+                <Route path="/catalog" element={<Product />} />
                 <Route path="orders" element={<Orders />}></Route>
                 <Route path="/order/:id" element={<OrderDetail />}></Route>
             </Routes>

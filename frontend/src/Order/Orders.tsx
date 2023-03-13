@@ -10,6 +10,7 @@ function Orders() {
         </div>
         <div className="order-list">
             <table className="table">
+
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -31,7 +32,7 @@ function Orders() {
                             <td>{order.user.name}</td>
                             <td>{order.isPaid}</td>
                             <td>{order.paidAt}</td>
-                            <td>{order.isDelivered.tostring()}</td>
+                            <td>{order.isDelivered.toString()}</td>
                             <td>{order.deliverableDate}</td>
                             <td>
                                 <Link to={"/order/" + order._id} className="button secondary" >
