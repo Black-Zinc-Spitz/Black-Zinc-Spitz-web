@@ -23,6 +23,24 @@ function Orders() {
                         <th>ACTIONS</th>
                     </tr>
                 </thead>
+                <tbody>
+                    {data.orders.map((order)=>(
+                        <tr key={order._id}>
+                            <td>{order.createdAt}</td>
+                            <td>{order.totalPrice}</td>
+                            <td>{order.user.name}</td>
+                            <td>{order.isPaid}</td>
+                            <td>{order.paidAt}</td>
+                            <td>{order.isDelivered.tostring()}</td>
+                            <td>{order.deliverableDate}</td>
+                            <td>
+                                <Link to={"/order/" + order._id} className="button secondary" >
+                                    Details
+                                </Link>
+                             </td>
+                         </tr>
+                    ))}
+                </tbody>
             </table>
         </div>
     </div> );
