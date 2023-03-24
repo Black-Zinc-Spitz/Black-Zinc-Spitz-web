@@ -48,7 +48,7 @@ function App() {
                 </li>
             </ul>
         </aside>
-        <main>
+        <main className="main">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Products />} />
