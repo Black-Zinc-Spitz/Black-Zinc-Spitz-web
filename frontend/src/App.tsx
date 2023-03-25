@@ -37,6 +37,7 @@ function App() {
         <div className="header-links">
             <Link to="/">Home</Link>
             <Link to="/catalog">Catalog</Link>
+            <Link to="/orders">Orders</Link>
         </div>
     </header>
 <<<<<<< HEAD
@@ -62,6 +63,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Products />} />
+                <Route path="orders" element={<Orders />}></Route>
             </Routes>
         </main>
         <footer className="footer">
