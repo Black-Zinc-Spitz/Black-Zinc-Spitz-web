@@ -4,6 +4,9 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
+import Orders from "./Orders/Orders";
+import OrderDetail from "./Orders/OrderDetail";
+import Payment from "./Payment/Payment";
 
 function App() {
 
@@ -16,19 +19,10 @@ function App() {
   return (
     <Router>
     <div className="grid-container">
-<<<<<<< HEAD
-        <link rel="stylesheet" href="style.css"/>
-        
-        <title>Black-Zinc-Spitz</title>
-
-    <body>
-    <div>
-=======
         <link rel="stylesheet" href="style.css" />
         <title>Black-Zinc-Spitz</title>
 <body>
     <div> 
->>>>>>> a3d4248 (navigation fix again)
     <header className="header">
         <div className="brand">
             <button onClick={openMenu}>&#9776;</button>
@@ -38,14 +32,9 @@ function App() {
             <Link to="/">Home</Link>
             <Link to="/catalog">Catalog</Link>
             <Link to="/orders">Orders</Link>
+            <Link to="/payment">Payment</Link>
         </div>
     </header>
-<<<<<<< HEAD
-    <title>Black-Zinc-Spitz</title>
-    
-
-=======
->>>>>>> a3d4248 (navigation fix again)
         <aside className="sidebar">
             <h3>Shopping Categories</h3>
             <button className="sidebar-close-button" onClick={closeMenu}>x</button>
@@ -64,6 +53,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Products />} />
                 <Route path="orders" element={<Orders />}></Route>
+                <Route path="/order/:id" element={<OrderDetail />}></Route>
+                <Route path="/payment" element={<Payment />}></Route>
             </Routes>
         </main>
         <footer className="footer">
