@@ -16,12 +16,19 @@ function App() {
   return (
     <Router>
     <div className="grid-container">
+<<<<<<< HEAD
         <link rel="stylesheet" href="style.css"/>
         
         <title>Black-Zinc-Spitz</title>
 
     <body>
     <div>
+=======
+        <link rel="stylesheet" href="style.css" />
+        <title>Black-Zinc-Spitz</title>
+<body>
+    <div> 
+>>>>>>> a3d4248 (navigation fix again)
     <header className="header">
         <div className="brand">
             <button onClick={openMenu}>&#9776;</button>
@@ -32,9 +39,12 @@ function App() {
             <Link to="/catalog">Catalog</Link>
         </div>
     </header>
+<<<<<<< HEAD
     <title>Black-Zinc-Spitz</title>
     
 
+=======
+>>>>>>> a3d4248 (navigation fix again)
         <aside className="sidebar">
             <h3>Shopping Categories</h3>
             <button className="sidebar-close-button" onClick={closeMenu}>x</button>
