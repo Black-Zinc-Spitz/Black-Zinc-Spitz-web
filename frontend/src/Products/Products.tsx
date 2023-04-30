@@ -17,7 +17,7 @@ function Products() {
     = useState(emptyProducts);
 
     useEffect(() => {
-        axios.get<Product[]>("http://localhost:5233/swagger/index.html",
+        axios.get<Product[]>("https://localhost:5233/catalog",
         {
             headers: {
                 "Content-Type": "application/json",
